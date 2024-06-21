@@ -51,7 +51,7 @@ if (localStorage.getItem("product") !== null) { // If Product in LocalStorage Ha
 
 // Create & Count
 addBtn.onclick = function () {
-    if (count.value != "" && count.value <= 1000 && title.value != "" && price.value != "" && category.value != "") {
+    if (count.value != "" && count.value <= 1000 && count.value > 0 && title.value != "" && price.value != "" && price.value > 0 && category.value != "" && taxes.value > 0 && ads.value > 0 && discount.value > 0) {
         // Create Product Object
         document.createElement = newProduct = {
             title:title.value,
