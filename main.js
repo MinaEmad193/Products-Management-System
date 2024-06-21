@@ -122,10 +122,13 @@ function deleteProduct(i) {
 
     // Update Data Again
     ShowData()
-    
+
+    DelAllBtn.innerHTML = `Delete All (${productsData.length})`
     // Function Of Opacity Of Delete All Btn
     if (productsData.length === 0) {
         DelAllBtn.style.display = `none`
+        document.querySelector("table").style.display = "none"
+        document.querySelector(".search-cont").style.display = "none"
     }
 }
 
