@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="site-name">Products Management System</h1>
+    <h2 class="slogan">Max Products Is 5000</h2>
+    <h2 class="slogan">Max count Is 1000</h2>
+    <!-- Application Container -->
+    <div class="app-container">
+        <!-- Here Add Product information to be created -->
+        <form action="" class="product-info-input">
+            <input type="text" class="title-input" placeholder="Title">
+            <div class="inf-box">
+                <input onkeyup="getTotal()" type="number" class="price-input" placeholder="Price">
+                <input onkeyup="getTotal()" type="number" class="taxes-input" placeholder="Taxes">
+                <input onkeyup="getTotal()" type="number" class="ads-input" placeholder="Ads">
+                <input onkeyup="getTotal()" type="number" class="discount-input" placeholder="Discount">
+                <span class="total">Total:<span class="total-amount">0</span></span>
+            </div>
+            <input type="text" class="count-input" placeholder="Count">
+            <input type="text" class="category-input" placeholder="Category">
+            <button class="add">Add</button>
+        </form>
+        <!-- Here Add Product information to be created -->
+        <!-- Search Area -->
+        <form class="search-cont">
+            <input type="text" class="search" placeholder="Search">
+            <div class="search-btns">
+                <button class="srch-title">Search By Title</button>
+                <button class="srch-category">Search By Category</button>
+            </div>
+        </form>
+        <!-- Search Area -->
+        <!-- Table Area -->
+        <table>
+            <button class="del-all"></button>
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>TITLE</td>
+                    <td>PRICE</td>
+                    <td>TAXAS</td>
+                    <td>ADS</td>
+                    <td>DISCOUNT</td>
+                    <td>TOTAL</td>
+                    <td>CATEGORY</td>
+                    <td class="update-cont">UPDATE</td>
+                    <td class="delete-cont">DELETE</td>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <!-- Table Area -->
+    </div>
+    <!-- Application Container -->
+    <script src="main.js"></script>
+</body>
+</html>
